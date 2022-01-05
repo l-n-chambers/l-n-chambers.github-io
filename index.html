@@ -50,7 +50,7 @@
 								</div>
 								<div class="container">
 									<header class="major">
-										<h2>Read Only</h2>
+										<h2>About Me</h2>
 										<p>Just an incredibly simple responsive site<br />
 										template freebie by <a href="http://html5up.net">HTML5 UP</a>.</p>
 									</header>
@@ -110,16 +110,28 @@
 								<div class="container">
 									<h3>Contact Me</h3>
 									<p>Integer eu ante ornare amet commetus vestibulum blandit integer in curae ac faucibus integer non. Adipiscing cubilia elementum integer. Integer eu ante ornare amet commetus.</p>
-									<form method="post" action="https://formsubmit.co/lewis.n.chambers@gmail.com">
+									<form method="post" action="https://formsubmit.co/lewis.n.chambers@gmail.com" onsubmit="return validateForm();">
 										<div class="row gtr-uniform">
-											<div class="col-6 col-12-xsmall"><input type="text" name="name" id="name" placeholder="Name" /></div>
-											<div class="col-6 col-12-xsmall"><input type="email" name="email" id="email" placeholder="Email" /></div>
-											<div class="col-12"><input type="text" name="subject" id="subject" placeholder="Subject" /></div>
-											<div class="col-12"><textarea name="message" id="message" placeholder="Message" rows="6"></textarea></div>
+											<div class="col-6 col-12-xsmall">
+												<div class="validation-warning">* Required Field</div>
+												<input type="text" name="name" id="name" placeholder="Name" />
+											</div>
+											<div class="col-6 col-12-xsmall">
+												<div class="validation-warning">* Required Field</div>
+												<input type="email" name="email" id="email" placeholder="Email" />
+											</div>
+											<div class="col-12">
+												<div class="validation-warning">* Required Field</div>
+												<input type="text" name="subject" id="subject" placeholder="Subject" />
+											</div>
+											<div class="col-12">
+												<div class="validation-warning">* Required Field</div>
+												<textarea name="message" id="message" placeholder="Message" rows="6"></textarea>
+											</div>
 											<div class="col-12">
 												<ul class="actions">
-													<li><input type="submit" class="primary" value="Send Message" /></li>
-													<li><input type="reset" value="Reset Form" /></li>
+													<li><input type="submit" class="primary" value="Send Message"/></li>
+													<li><input type="reset" value="Reset Form" onclick="resetForm()"/></li>
 												</ul>
 											</div>
 										</div>
@@ -479,6 +491,7 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+			<script src="assets/js/contactFormMethods.js"></script>
 
 	</body>
 </html>

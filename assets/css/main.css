@@ -442,8 +442,12 @@ input, select, textarea {
 			}
 
 				.row.gtr-uniform > * {
-					padding-top: 2em;
+					padding-top: 0em;
 				}
+
+				.actions {
+					padding-top: 1.25em
+							}
 
 		.row.gtr-150 {
 			margin-top: 0;
@@ -685,8 +689,12 @@ input, select, textarea {
 					}
 
 						.row.gtr-uniform > * {
-							padding-top: 2em;
+							padding-top: 0em;
 						}
+
+						.actions {
+							    padding-top: 1.25em
+							}
 
 				.row.gtr-150 {
 					margin-top: 0;
@@ -930,8 +938,12 @@ input, select, textarea {
 					}
 
 						.row.gtr-uniform > * {
-							padding-top: 1.5em;
+							padding-top: 0em;
 						}
+
+						.actions {
+							    padding-top: 1.25em
+							}
 
 				.row.gtr-150 {
 					margin-top: 0;
@@ -1178,6 +1190,10 @@ input, select, textarea {
 							padding-top: 1.5em;
 						}
 
+						.actions {
+							    padding-top: 1.25em
+							}
+
 				.row.gtr-150 {
 					margin-top: 0;
 					margin-left: -2.25em;
@@ -1420,8 +1436,12 @@ input, select, textarea {
 					}
 
 						.row.gtr-uniform > * {
-							padding-top: 1.25em;
+							padding-top: 0em;
 						}
+
+						.actions {
+							    padding-top: 1.25em
+							}
 
 				.row.gtr-150 {
 					margin-top: 0;
@@ -1665,8 +1685,12 @@ input, select, textarea {
 					}
 
 						.row.gtr-uniform > * {
-							padding-top: 1.25em;
+							padding-top: 0em;
 						}
+
+						.actions {
+							    padding-top: 1.25em
+							}
 
 				.row.gtr-150 {
 					margin-top: 0;
@@ -1797,7 +1821,14 @@ input, select, textarea {
 		}
 
 /* Form */
-
+    div.validation-warning {
+        font-size: 80%;
+        color: transparent;
+        height: auto;
+        line-height: normal;
+        padding-top: 0.5em;
+        padding-bottom: 0.2em;
+    }
 	form {
 		margin: 0 0 2.25em 0;
 	}
@@ -1833,6 +1864,7 @@ input, select, textarea {
 		padding: 0 1em;
 		text-decoration: none;
 		width: 100%;
+		resize: vertical;
 	}
 
 		input[type="text"]:invalid,
