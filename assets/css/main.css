@@ -1187,7 +1187,7 @@ input, select, textarea {
 					}
 
 						.row.gtr-uniform > * {
-							padding-top: 1.5em;
+							padding-top: 0em;
 						}
 
 						.actions {
