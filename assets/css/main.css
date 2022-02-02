@@ -2698,16 +2698,18 @@ input, select, textarea {
 			padding-top: 0;
 		}
 
-		.features article .image {
+		.features article .image, .image-long {
 			display: inline-block;
 			padding-right: 2.5em;
 			vertical-align: middle;
 			width: 48%;
 		}
 
-			.features article .image img {
+			.features article .image img, .image-long img {
 				display: block;
 				width: 100%;
+				margin-left: auto;
+				margin-right: auto;
 			}
 
 		.features article .inner {
@@ -3197,7 +3199,17 @@ input, select, textarea {
 
 		/* Features */
 
-			.features article .image {
+			.features article .image, .image-long {
+				display: block;
+				margin: 0 auto 2.25em auto;
+				padding-right: 0;
+				width: 70%;
+			}
+
+			.features article .image-long {
+			width: 50%;}
+
+			.features article {
 				display: block;
 				margin: 0 0 2.25em 0;
 				padding-right: 0;
