@@ -2698,14 +2698,14 @@ input, select, textarea {
 			padding-top: 0;
 		}
 
-		.features article .image, .image-long {
+		.features article .image, .features article .image-long {
 			display: inline-block;
 			padding-right: 2.5em;
 			vertical-align: middle;
 			width: 48%;
 		}
 
-			.features article .image img, .image-long img {
+			.features article .image img, .features article .image-long img {
 				display: block;
 				width: 100%;
 				margin-left: auto;
@@ -3199,7 +3199,7 @@ input, select, textarea {
 
 		/* Features */
 
-			.features article .image, .image-long {
+			.features article .image, .features article .image-long {
 				display: block;
 				margin: 0 auto 2.25em auto;
 				padding-right: 0;
@@ -3303,6 +3303,10 @@ input, select, textarea {
 	@media screen and (max-width: 480px) {
 
 		/* Basic */
+
+		.features article .image, .features article .image-long {
+		    width: 100%;
+		}
 
 			html, body {
 				min-width: 320px;
